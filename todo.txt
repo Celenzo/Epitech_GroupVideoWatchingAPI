@@ -1,0 +1,79 @@
+x User creation
+- User login
+- Lobby creation
+- Join a lobby
+- Administrate a lobby
+- Manage playlist
+- Manage users as admin
+- Add local video streaming
+- Add video controls 
+- Add socket.io chatroom
+- Add youtube video streaming
+
+
+----------------------------------PROJECT DESCRIPTION----------------------------------
+
+• Basic server (mandatory) – 12 points
+    o Create a REST API
+    o Expected features:
+        ▪ Create a lobby and get a specific URL
+        ▪ Allow password protection on the lobby
+        ▪ Add videos to a playlist
+        ▪ Play, pause, go to specific time
+        ▪ The video is synchronized for every person in the lobby
+        ▪ Display the current number of users in the lobby
+        ▪ Auto destruction of the lobby 5 minutes after every user left
+    o One of the following video sources:
+        ▪ Media present on the server
+        ▪ YouTube
+    o Unit tests (70% coverage minimum)
+• Basic client (mandatory) – 12 points
+    o Create a React app
+    o Implement every feature of the API
+• Advanced system
+    o Host on AWS, GCP, or Azure (not on standard VMs) — 4 points
+    o Implement the other video source (media on the server or YouTube) — 2 points
+    o Implement controls over the playlist — 2 points
+        ▪ Previous media
+        ▪ Next media
+        ▪ Delete media
+        ▪ Reorder media
+    o Users can stream their own files — 8 points
+        ▪ The media is streamed to the server
+        ▪ The server streams to every user
+    o Implement user authentication
+        ▪ Local accounts — 2 points
+        ▪ External providers (Facebook, Google, Twitter, GitHub, Microsoft, etc) — 1 point each
+    o Implement a chat with Socket.io
+        ▪ Display nickname, video timestamp and message — 4 points
+        ▪ Allow rich text (bold, italic, underlined, striped) — 2 points
+        ▪ Allow emojis — 2 points
+        ▪ Allow GIFs — 2 points
+    o Implement audio chat with Socket.io — 12 points
+        ▪ Opt-in or opt-out audio chat
+        ▪ Select push-to-talk or voice detection (with sensitivity adjustment)
+        ▪ Display a list of nicknames of the connected users
+        ▪ Display differently silent and talking users
+        ▪ Allow to mute self
+        ▪ Allow to mute others (only for self)
+    o Role management — 4 points
+        ▪ The creator of the lobby is administrator
+        ▪ The administrator can kick users
+        ▪ The administrator can change the lobby’s password
+        ▪ The administrator can promote and demote users
+        ▪ The administrator can control permissions between users and administrators (control of the
+            media and the playlist)
+        ▪ The administrator can define an administration password (allows a user to get the administrator
+            status) 
+        ▪ The administrator can force-delete media in the playlist
+        ▪ If chat is implemented: the administrator can hide a message — 1 point
+        ▪ If audio chat is implemented: — 2 points
+            • The administrator can mute a user
+            • The administrator can set priority users (mutes everyone else while talking)
+    o Voting system — 4 points
+        ▪ Users can start votes to take actions over the playlist (previous, next, add, delete, reorder)
+    o Streaming — 4 points each
+        ▪ Chromecast
+        ▪ AirPlay
+        ▪ If chat and/or audio chat are implemented: both should remain on the streaming device — 1
+            point

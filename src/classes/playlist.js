@@ -17,4 +17,10 @@ class Playlist {
             pVideo != videoInfo;
         }));
     }
+
+    moveInPlaylist(vidToMove) {
+        //move video
+    }
 }
+
+module.exports = Playlist;

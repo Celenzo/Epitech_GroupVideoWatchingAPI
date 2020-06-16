@@ -1,11 +1,12 @@
 require('./lobby');
 
 class User {
-    constructor(id, name, password, role, lobby) {
+    constructor(id, name, password, role) {
         this.id = id;
         this.name = name;
         this.password = password;
         this.role = role;
-        this.lobby = lobby;
     }
 }
+
+module.exports = User;

@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/Celenzo/Epitech_GroupVideoWatchingAPI#readme",
   "dependencies": {
+    "aes256": "^1.0.4",
+    "body-parser": "^1.19.0",
+    "common-env": "^6.4.0",
     "express": "^4.17.1",
-    "mongodb": "^3.5.9"
+    "lodash": "^4.17.15",
+    "massive": "^6.4.0",
+    "uuid": "^8.1.0"
   }
 }

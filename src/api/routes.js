@@ -1,6 +1,8 @@
 'use strict'
 
-module.exports = (server) => {
+const _ = require('lodash');
+
+module.exports = (server, handlers) => {
     server.route('/lobby')
         //User
         .get((req, res) => {
@@ -57,11 +59,31 @@ module.exports = (server) => {
             //kick user from lobby
         })
 
-    server.route('/users/')
-        //User
+
+    server.route('/users/login')
         .post((req, res) => {
-            //Create new user
+            //Login using credentials
         })
+
+
+    server.route('/users/register')
+         //User
+         .post((req, res) => {
+            handlers.usersHandlers.addUser(req.body.username, req.body.password).then(user => {
+                res.send({
+                    status: 200,
+                    message: _.omit(user, ['password'])
+                })
+            }).catch(err => {
+                res.send({
+                    status: 500,
+                    message: 'Internal Server Error'
+                })
+            })
+            
+        })
+
+    server.route('/users/:id')
         //User
         .get((req, res) => {
             //Get user information

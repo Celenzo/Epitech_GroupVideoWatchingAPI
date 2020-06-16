@@ -11,3 +11,5 @@ class Lobby {
         this.bannedUsers.push(userId);
     }
 }
+
+module.exports = Lobby;
