@@ -1,0 +1,23 @@
+{
+  "name": "gvw",
+  "version": "1.0.0",
+  "description": "Group Video Watching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celenzo/Epitech_GroupVideoWatchingAPI.git"
+  },
+  "author": "Celenzo \"crespi_c\" Crespin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Celenzo/Epitech_GroupVideoWatchingAPI/issues"
+  },
+  "homepage": "https://github.com/Celenzo/Epitech_GroupVideoWatchingAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9"
+  }
+}
